@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: #055a61;
+    --text-color:white;
+  }
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image:url('imgs/asset 12.jpeg');
+    background-size: cover;
+    background-position: 100%;
+    /* animation: bg 12s linear 2s infinite direction fill-mode; */
+
+    animation-name: bg;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction:linear;
+   }
+      
+      @keyframes bg {
+        0%   {background-image: url('imgs/asset 12.jpeg');}
+        25%  {background-image: url('imgs/asset 13.jpeg');}
+        50%  {background-image: url('imgs/asset 14.jpeg');}
+        100% {background-image: url('imgs/asset 12.jpeg');}
+      }
+ 
+  button{
+  background-color: var(--main-color);
+  color:var(--text-color) ;
+  }
+
+.mid{
+    padding: 200px 2px;
+    padding: auto;
+}
+
+@media screen and (max-width:768px){
+    .mid {
+      padding-top:350px;
+    }
+}
+
+.mid button, .second button {
+    background-color: var(--main-color);
+    color:var(--text-color) ;
+
+}
+ .img img{
+  height: 70px;
+  width: 70px;
+}
+
+.box{
+  height:65px ;
+  width: 65px;
+  background-color:#efefef;
+}
+.box:hover{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
+}
+.icon i{
+  padding: 10px;
+  font-size: 30px;
+}
+.img .image{
+   margin-top: -40px;
+}
+.card{
+  border:1px solid white;
+}
+
+.card:hover{
+  transform: scale(1.05) ;
+}
+
+footer {
+  font-size: small;
+}
+footer li{
+  list-style-type: none;
+  padding: 5px;
+}
+.icons i{
+  font-size: 20px;
+
+}
